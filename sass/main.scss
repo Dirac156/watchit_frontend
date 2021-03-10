@@ -1,0 +1,31 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/grid";
+@import "components/button-outlined";
+@import "components/card";
+@import "components/icons";
+@import "components/navbar";
+@import "components/side-bar";
+@import "components/info_bar";
+@import "components/chart";
+
+
+@import "layout/navbar";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/dashbord";
+
+
+
+
+
+
+

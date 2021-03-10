@@ -1,0 +1,114 @@
+.side-bar {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    width: 20vw;
+    height: 72rem;
+    border: 1px solid $color-grey-light;
+    box-shadow: 0 1rem 2.5rem rgba($color: $color-black, $alpha: .3);
+    margin: 0 3rem 0 0;
+    position: fixed;
+    left: 0;
+    
+
+    &__group {
+        padding: 2rem 1rem;
+        &:not(:last-child){
+            border-bottom: 1px solid $color-grey-light;
+        }
+        
+    }
+
+    &__profile {
+        
+
+        &--circle {
+            width: 4rem;
+            height: 4rem;
+            float: left;
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            
+        }
+
+        &--img {
+            border: 5px solid $color-grey-light;
+            width: 100%;
+        }
+
+        &--name {
+            clear: both;
+            margin: 60% 5% 0;
+            font-size: 2rem;
+            text-transform: capitalize;
+        }
+    }
+
+    &__logo{
+        font-size: 3rem;
+
+        &--img{
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary, .5),
+                rgba($color-primary, .5)
+             );
+            -webkit-background-clip: text;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+        &--text{
+            font-size: 3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-left: 3%;
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary, .5),
+                rgba($color-primary, .5)
+             );
+             -webkit-background-clip: text;
+        }
+    }
+
+    &__icon{
+        color: rgba($color-primary, .8) !important;
+        margin-right: 2rem;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: rgba($color-primary, .9);
+        &:last-child{
+            color:$color-grey-dark;
+        }
+        transition: all .2s ease;
+        cursor: pointer;
+
+
+        &:hover{
+            padding: 1rem;
+            border: none;
+        }
+    }
+
+    &__option{
+        font-size: 2rem;
+        margin: 3rem 0 0;
+
+        &--text{
+            text-align: left;
+        }
+
+        &:last-child{
+            margin-bottom: 3rem;
+        }
+
+        &--active{
+            font-weight: 900;
+        }
+    }
+
+}

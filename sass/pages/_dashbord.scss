@@ -1,0 +1,24 @@
+.dashboard{
+    padding: $padding-default;
+}
+.side-bar{
+    
+    display: inline-block;
+    width: $view_port_left;
+}
+
+.info-bar{
+    position: absolute;
+    top: 1.5rem;
+    left: 35rem;
+    display: inline-block;
+    width: $view_port_right;
+}
+
+.chart{
+    position: absolute;
+    top: 17rem;
+    left: 35rem;
+    display: inline-block;
+    width: $view_port_right;
+}

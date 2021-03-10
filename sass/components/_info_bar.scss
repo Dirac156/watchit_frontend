@@ -1,0 +1,32 @@
+.info-bar{
+    font-size: 3rem;
+
+    &__text{
+        font-weight: 600;
+        display: inline-block;
+        width: 80%;
+    }
+
+    &__icon{
+        width: 15%;
+        display: inline-block;
+        transition: all .3s ease;
+
+
+        &--tmp{
+            
+        }
+
+        &--tmp-hot{
+            color: rgba(red, .7) !important;
+        }
+
+        &--tmp-cool{
+            color: rgba($color-primary, .7) !important;
+        }
+
+        &--tmp-cold{
+            color: rgba(blue, .8) !important;
+        }
+    }
+}

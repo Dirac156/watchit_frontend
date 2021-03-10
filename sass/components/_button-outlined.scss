@@ -1,0 +1,35 @@
+.btn{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 1.2rem 3rem;
+    border: .1px solid $color-grey-light;
+    border-radius: .8rem;
+    box-shadow: 0 1rem 2rem rgba($color-primary, .2);
+    transition: all .3s;
+    color: $color-grey-light;
+
+    &--outlined{
+        background-color: transparent;
+    }
+
+    &--animated-in{
+        animation: moveIn .5s ease-out .75s;
+    }
+
+    &:hover{
+        transform: translateY(-1rem);
+        box-shadow: 0 1rem 2rem rgba($color-primary, .2);
+        background-color: rgba($color-primary, 0.5);
+        border: none;
+        cursor: pointer;
+    }
+
+    &:active{
+        transform: translateY(-0.5rem);
+        box-shadow: 0 1rem 2rem rgba($color-primary, .2);
+        background-color: rgba($color-primary, 1);
+        border: none;
+        cursor: pointer;
+    }
+}

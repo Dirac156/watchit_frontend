@@ -1,0 +1,16 @@
+.chart{
+
+    &__temperature, &__moisture{
+        width: 100%;
+
+        &--big{
+            height: 19rem;
+            width: 100%;
+        }
+
+        &--small{
+            height: 22rem;
+            width: 100%;
+        }
+    }
+}
