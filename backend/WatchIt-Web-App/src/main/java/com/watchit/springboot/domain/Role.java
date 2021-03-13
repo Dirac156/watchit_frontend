@@ -24,6 +24,11 @@ public class Role {
 	
 	private String name;
 	
+	// default constructor
+	public Role() {
+		super();
+	}
+
 	
 	// a constructor with getters and setters below it
 	public Role(String name) {
@@ -31,10 +36,7 @@ public class Role {
 		this.name = name;
 	}
 
-	public Role() {
-		super();
-	}
-
+	
 	public Long getId() {
 		return id;
 	}

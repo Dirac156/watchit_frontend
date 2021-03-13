@@ -10,5 +10,7 @@ import com.watchit.springboot.domain.User;
 @Repository
 // this interface is responsible for persistence and query operations
 public interface UserRepository extends JpaRepository<User, Long>{
+	
+	User findByEmail(String email);  // finding a user based on their email
 
 }
