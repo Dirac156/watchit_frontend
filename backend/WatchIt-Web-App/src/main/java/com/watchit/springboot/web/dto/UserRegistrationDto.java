@@ -1,5 +1,8 @@
+// Author : Fiona Mukuhi Ng'ang'a
+
 package com.watchit.springboot.web.dto;
 
+// this class sends all of the registration information to our backend
 public class UserRegistrationDto {
 	
 	private String firstName;
@@ -8,7 +11,12 @@ public class UserRegistrationDto {
 	private String password;
 	
 	
-	
+	// default constructor
+	public UserRegistrationDto() {
+		super();
+	}
+
+	// initialization constructor, with getters and setters below it
 	public UserRegistrationDto(String firstName, String lastName, String email, String password) {
 		super();
 		this.firstName = firstName;

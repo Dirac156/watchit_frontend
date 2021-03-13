@@ -1,3 +1,5 @@
+// Author : Fiona Mukuhi Ng'ang'a
+
 package com.watchit.springboot.domain;
 
 import java.util.Collection;
@@ -17,6 +19,8 @@ import javax.persistence.UniqueConstraint;
 
 @Entity
 @Table(name  = "users",uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+
+// this class handles our users
 public class User {
 	
 	@Id
@@ -32,6 +36,7 @@ public class User {
 	private String email;
 	private String password;
 	
+	// this creates a many to many relationship table between our users and their roles(one can have many roles and vice versa)
 	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinTable(name = "users_roles",joinColumns = @JoinColumn(name = "user_id",referencedColumnName = "id"),
 	           inverseJoinColumns = @JoinColumn(name = "role_id",referencedColumnName = "id"))
@@ -39,7 +44,7 @@ public class User {
 	private Collection<Role> roles;
 	
 	
-	
+	// here we have constructors and getters and setters below it
 	public User() {
 		super();
 	}

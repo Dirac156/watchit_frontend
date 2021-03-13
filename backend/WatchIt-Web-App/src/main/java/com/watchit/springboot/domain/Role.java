@@ -1,3 +1,5 @@
+// Author : Fiona Mukuhi Ng'ang'a
+
 package com.watchit.springboot.domain;
 
 import javax.persistence.Entity;
@@ -6,8 +8,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+import com.watchit.springboot.web.dto.UserRegistrationDto;
+
 @Entity
 @Table(name = "role")
+
+// this class handles the roles for our users(admin, user)
 public class Role {
 	
 	@Id
@@ -17,7 +25,7 @@ public class Role {
 	private String name;
 	
 	
-	
+	// a constructor with getters and setters below it
 	public Role(String name) {
 		super();
 		this.name = name;
